@@ -1,11 +1,92 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import Heading from '../components/Heading.astro';
+import HtmlCard from '../components/HtmlCard.astro';
+import TextCard from '../components/TextCard.astro';
+import Title from '../components/Title.astro';
+import VideoCard from '../components/VideoCard.astro';
+import YouTubeCard from '../components/YouTubeCard.astro';
+import CardTray from '../layouts/CardTray.astro';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Arlo Geiger Guitar">
+	<Title title="Arlo Geiger Guitar"></Title>
+	<TextCard text="Arlo has studied classical guitar with Scott Cmiel since 2015,\
+		and at the San Francisco Conservatory of Music Pre-College Program 2019-2025."
+	></TextCard>
+	<Heading heading="Featured video"></Heading>
+	<VideoCard
+		src="https://customer-78c7ewhahv4gi16q.cloudflarestream.com/b1e424f7987c689f9e8befe7bcc98ed7/iframe?poster=https%3A%2F%2Fcustomer-78c7ewhahv4gi16q.cloudflarestream.com%2Fb1e424f7987c689f9e8befe7bcc98ed7%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600",
+		caption="Capricho Árabe, Francisco Tarrega"
+	></VideoCard>
+	<CardTray heading="Solo performances">
+		<VideoCard
+			src="https://customer-78c7ewhahv4gi16q.cloudflarestream.com/b1e424f7987c689f9e8befe7bcc98ed7/iframe?poster=https%3A%2F%2Fcustomer-78c7ewhahv4gi16q.cloudflarestream.com%2Fb1e424f7987c689f9e8befe7bcc98ed7%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600",
+			caption="Capricho Árabe, Francisco Tarrega"
+		></VideoCard>
+		<VideoCard
+    		src="https://customer-78c7ewhahv4gi16q.cloudflarestream.com/a06a95ea1181fc70b1fd4fc7f6be6780/iframe?poster=https%3A%2F%2Fcustomer-78c7ewhahv4gi16q.cloudflarestream.com%2Fa06a95ea1181fc70b1fd4fc7f6be6780%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+			caption="Choros, Heitor Villa-Lobos"
+		></VideoCard>
+		<VideoCard
+    		src="https://customer-78c7ewhahv4gi16q.cloudflarestream.com/bfa128ce693fd14d6755efa6e44c9db7/iframe?poster=https%3A%2F%2Fcustomer-78c7ewhahv4gi16q.cloudflarestream.com%2Fbfa128ce693fd14d6755efa6e44c9db7%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+			caption="Numen, Andrew York"
+		></VideoCard>
+		<VideoCard
+			src="https://customer-78c7ewhahv4gi16q.cloudflarestream.com/df7d91e84a99e9b95bcc53fd9ccdd62f/iframe?poster=https%3A%2F%2Fcustomer-78c7ewhahv4gi16q.cloudflarestream.com%2Fdf7d91e84a99e9b95bcc53fd9ccdd62f%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600",
+			caption="Prelude #1, Heitor Villa-Lobos"
+		></VideoCard>
+	</CardTray>
+	<CardTray heading="Small ensemble performances">
+		<VideoCard
+    		src="https://customer-78c7ewhahv4gi16q.cloudflarestream.com/24cd830132c583404f07ea04a8f85472/iframe?poster=https%3A%2F%2Fcustomer-78c7ewhahv4gi16q.cloudflarestream.com%2F24cd830132c583404f07ea04a8f85472%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+			caption="Lotus Eaters, Andrew York"
+		></VideoCard>
+		<VideoCard
+    		src="https://customer-78c7ewhahv4gi16q.cloudflarestream.com/918a05d5e7ac21950a1492f0cb70fee9/iframe?poster=https%3A%2F%2Fcustomer-78c7ewhahv4gi16q.cloudflarestream.com%2F918a05d5e7ac21950a1492f0cb70fee9%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+			caption="Black Opal, Phillip Houghton"
+		></VideoCard>
+		<VideoCard
+    		src="https://customer-78c7ewhahv4gi16q.cloudflarestream.com/fe75ba3abb530c96a09a747401364088/iframe?poster=https%3A%2F%2Fcustomer-78c7ewhahv4gi16q.cloudflarestream.com%2Ffe75ba3abb530c96a09a747401364088%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+			caption="Mi Compadre Nicholas, arr. David Duenas"
+		></VideoCard>
+	</CardTray>
+	<CardTray heading="Orchestra performances">
+		<VideoCard
+    		src="https://customer-78c7ewhahv4gi16q.cloudflarestream.com/949e74eab247422e7d35dfb47c451383/iframe?poster=https%3A%2F%2Fcustomer-78c7ewhahv4gi16q.cloudflarestream.com%2F949e74eab247422e7d35dfb47c451383%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+			caption="After JSB, Ronald Pearl"
+		></VideoCard>
+		<VideoCard
+    		src="https://customer-78c7ewhahv4gi16q.cloudflarestream.com/17055bc4fc90fa5573afe14a54522c06/iframe?poster=https%3A%2F%2Fcustomer-78c7ewhahv4gi16q.cloudflarestream.com%2F17055bc4fc90fa5573afe14a54522c06%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+			caption="The Art of Fugue, JS Bach"
+		></VideoCard>
+		<YouTubeCard
+        	src="https://www.youtube.com/embed/znNuD4Kccf0?si=dLseT2vwnHbmuivB"
+			caption="Pacific Coast Highway, Andrew York"
+		></YouTubeCard>
+		<YouTubeCard
+			src="https://www.youtube.com/embed/nXynRKiTijA?si=V0TmZpacpTzE55-Z"
+			caption="Bluezillian, Clarice Assad"
+		></YouTubeCard>
+		<YouTubeCard
+			src="https://www.youtube.com/embed/5ucMfHdMY-Y?si=8BQ1hYxAQPhZAJlJ"
+			caption="Mbira, William Kanengiser"
+		></YouTubeCard>
+	</CardTray>
+	<Heading heading="Awards, public performances, etc."></Heading>
+	<HtmlCard htmlContent="\
+		<li style='font-size: clamp(1rem, 2vw, 2rem);'>2025: Virtual Guitar Orchestra – <i>After JSB</i>.</li>\
+		<li style='font-size: clamp(1rem, 2vw, 2rem);'>2025: SFCM Chamber Music Award.</li>\
+		<li style='font-size: clamp(1rem, 2vw, 2rem);'>2025: Opened for Manuel Barrueco at the Herbst Theater, SF.</li>\
+		<li style='font-size: clamp(1rem, 2vw, 2rem);'>2024: Attended Aaron Shearer Foundation Summer Institute with Andrew York.</li>\
+		<li style='font-size: clamp(1rem, 2vw, 2rem);'>2024: GLORY International Music Competition, 3rd Prize.</li>\
+		<li style='font-size: clamp(1rem, 2vw, 2rem);'>2024: Virtual guitar orchestra – <i>Pacific Coast Highway</i>.</li>\
+		<li style='font-size: clamp(1rem, 2vw, 2rem);'>2024: Concert at St Mark's, SF – <i>Bluezillian</i>.</li>\
+		<li style='font-size: clamp(1rem, 2vw, 2rem);'>2023: Performance at the South Bay Guitar Society Festival.</li>\
+		<li style='font-size: clamp(1rem, 2vw, 2rem);'>2023: Virtual guitar orchestra – <i>Mbira</i>.</li>\
+		<li style='font-size: clamp(1rem, 2vw, 2rem);'>2022: SFCM Chamber Music Award.</li>"
+	></HtmlCard>
 </Layout>

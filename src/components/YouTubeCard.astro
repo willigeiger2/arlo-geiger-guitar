@@ -1,0 +1,30 @@
+---
+export interface Props {
+	src: string;
+	caption: string;
+}
+
+const { src, caption } = Astro.props;
+---
+
+<div style="min-width: 240px; flex: 1;">
+    <div style="width=100%;">
+        <iframe
+            width="100%"
+            src={src}
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+        ></iframe>
+    </div>
+    <p>{caption}</p>
+</div>
+
+<style>
+p {
+   font-size: clamp(0.75rem, 1.5vw, 1.5rem);
+   font-weight: normal;
+}
+</style>

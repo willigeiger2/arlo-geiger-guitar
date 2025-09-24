@@ -1,0 +1,28 @@
+---
+export interface Props {
+	src: string;
+	caption: string;
+}
+
+const { src, caption } = Astro.props;
+---
+
+<div style="min-width: 240px; flex: 1;">
+  <div style="position: relative; padding-top: 56.25%;">
+    <iframe
+      src={src}
+      loading="lazy"
+      style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+      allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+      allowfullscreen="true"
+    ></iframe>
+  </div>
+  <p>{caption}</p>
+</div>
+
+<style>
+p {
+   font-size: clamp(0.75rem, 1.5vw, 1.5rem);
+   font-weight: normal;
+}
+</style>

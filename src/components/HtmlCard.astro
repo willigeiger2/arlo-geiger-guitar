@@ -1,0 +1,10 @@
+---
+export interface Props {
+	htmlContent: string;
+}
+
+const { htmlContent } = Astro.props;
+---
+
+<div set:html={htmlContent}>
+</div>

@@ -1,0 +1,19 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<div>
+  <h1>{title}</h1>
+</div>
+
+<style>
+h1 {
+	font-family: "EB Garamond", Garamond, serif;
+  font-size: clamp(2.5rem, 5vw, 7.5rem);
+  font-weight: normal;
+}
+</style>
